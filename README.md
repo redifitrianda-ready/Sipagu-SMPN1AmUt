@@ -80,7 +80,7 @@
                     <!-- Profile Avatar -->
                     <div class="hidden sm:flex items-center space-x-3 pl-4 border-l border-slate-700">
                         <div class="text-right">
-                            <p id="header-user-name" class="text-sm font-semibold text-slate-100">Redi Fitrianda, S.Pd</p>
+                            <p id="header-user-name" class="text-sm font-semibold text-slate-100">Redi Fitrianda,S.Pd</p>
                             <p id="header-user-role" class="text-xs text-slate-400">NIP. 19830511 200604 1 009</p>
                         </div>
                         <img class="h-9 w-9 rounded-full ring-2 ring-emerald-500 object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256" alt="Profile">
@@ -102,14 +102,14 @@
                         <img class="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-cover ring-4 ring-emerald-50 shadow-sm" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256" alt="Guru Avatar">
                         <div>
                             <div class="flex items-center space-x-2">
-                                <h1 class="text-xl sm:text-2xl font-bold text-slate-900">Drs. Ahmad Fauzi, M.Pd</h1>
+                                <h1 class="text-xl sm:text-2xl font-bold text-slate-900">Muhammad Rasyid, S.Pd</h1>
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">Aktif</span>
                             </div>
-                            <p class="text-xs sm:text-sm text-slate-500 font-medium">NIP: 19780512 200501 1 003 • Guru Pembina Utam</p>
+                            <p class="text-xs sm:text-sm text-slate-500 font-medium">NIP: 19920202 202321 1 012 • </p>
                             
                             <div class="mt-2 flex flex-wrap gap-2 text-xs">
-                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-medium"><i class="fa-solid fa-book-open text-emerald-600 mr-1"></i> Informatika</span>
-                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-medium"><i class="fa-solid fa-chalkboard-user text-emerald-600 mr-1"></i> Kelas X-1, X-2, XI-3</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-medium"><i class="fa-solid fa-book-open text-emerald-600 mr-1"></i>Penjas Orkes</span>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-medium"><i class="fa-solid fa-chalkboard-user text-emerald-600 mr-1"></i> Kelas VII-A, VII-B, VIII-A, VIII-B, IX-A, IX-B</span>
                                 <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md font-medium"><i class="fa-solid fa-calendar-days text-emerald-600 mr-1"></i> Semester Ganjil 2026/2027</span>
                             </div>
                         </div>
@@ -240,14 +240,18 @@
                                 <div>
                                     <label class="block text-xs font-medium text-slate-700 mb-1">Kelas</label>
                                     <select id="jurnal-kelas" required class="w-full px-3 py-1.5 border border-slate-300 rounded-lg text-xs outline-none focus:ring-2 focus:ring-purple-500 bg-white">
-                                        <option value="X-1">X-1 (Informatika)</option>
-                                        <option value="X-2">X-2 (Informatika)</option>
-                                        <option value="XI-3">XI-3 (Informatika)</option>
+                                        <option value="VII-A">VII-A (Penjas Orkes)</option>
+                                        <option value="VII-B">VII-B (Penjas Orkes)</option>
+                                        <option value="VIII-A">VIII-A (Penjas Orkes)</option>
+					<option value="VIII-B">VIII-B (Penjas Orkes)</option>
+					<option value="IX-A">IX-A (Penjas Orkes)</option>
+					<option value="IX-B">IX-B (Penjas Orkes)</option>
+
                                     </select>
                                 </div>
                                 <div>
                                     <label class="block text-xs font-medium text-slate-700 mb-1">Mata Pelajaran</label>
-                                    <input type="text" id="jurnal-mapel" value="Informatika" readonly class="w-full px-3 py-1.5 border border-slate-200 bg-slate-50 rounded-lg text-xs text-slate-600 font-medium">
+                                    <input type="text" id="jurnal-mapel" value="Penjas Orkes" readonly class="w-full px-3 py-1.5 border border-slate-200 bg-slate-50 rounded-lg text-xs text-slate-600 font-medium">
                                 </div>
                             </div>
 
@@ -303,9 +307,12 @@
                             <div class="flex space-x-2">
                                 <select id="filter-jurnal-kelas" onchange="renderJurnalHistory()" class="px-2.5 py-1 border border-slate-300 rounded-lg text-xs bg-white outline-none">
                                     <option value="ALL">Semua Kelas</option>
-                                    <option value="X-1">Kelas X-1</option>
-                                    <option value="X-2">Kelas X-2</option>
-                                    <option value="XI-3">Kelas XI-3</option>
+                                    <option value="VII-A">VII-A (Penjas Orkes)</option>
+                                    <option value="VII-B">VII-B (Penjas Orkes)</option>
+                                    <option value="VIII-A">VIII-A (Penjas Orkes)</option>
+					<option value="VIII-B">VIII-B (Penjas Orkes)</option>
+					<option value="IX-A">IX-A (Penjas Orkes)</option>
+					<option value="IX-B">IX-B (Penjas Orkes)</option>
                                 </select>
                             </div>
                         </div>
@@ -387,11 +394,17 @@
                     </div>
                     <select id="supervisor-filter-mapel" onchange="renderSupervisorTable()" class="px-3 py-2 border border-slate-300 rounded-lg text-sm bg-white focus:ring-2 focus:ring-emerald-500 outline-none">
                         <option value="ALL">Semua Mata Pelajaran</option>
-                        <option value="Informatika">Informatika</option>
+                        <option value="Penjas Orkes">Penjas Orkes</option>
                         <option value="Matematika">Matematika</option>
                         <option value="Bahasa Indonesia">Bahasa Indonesia</option>
                         <option value="Bahasa Inggris">Bahasa Inggris</option>
                         <option value="Fisika">Fisika</option>
+			<option value="IPA">IPA</option>
+                        <option value="IPS">IPS</option>
+                        <option value="PKN">PKN</option>
+                        <option value="Informatika">Informatika</option>
+                        <option value="Prakarya">Prakarya</option>
+			<option value="Bimbingan Konseling">Bimbingan Konseling</option>
                     </select>
                 </div>
 
@@ -774,12 +787,17 @@
 
         // Dummy Supervisor Teachers Master Data
         let supervisorTeachers = [
-            { id: 1, name: 'Drs. Ahmad Fauzi, M.Pd', nip: '19780512 200501 1 003', mapel: 'Informatika', rpp: 'Disetujui', jurnal: 'Lengkap', prota: 'Menunggu Verifikasi', penilaian: 'Perlu Perbaikan', progress: 75, notes: 'Mohon lengkapi perbaikan revisi soal STS.' },
-            { id: 2, name: 'Siti Rahmawati, S.Pd', nip: '19850314 200902 2 008', mapel: 'Matematika', rpp: 'Disetujui', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Disetujui', progress: 100, notes: 'Administrasi sangat rapi dan lengkap.' },
-            { id: 3, name: 'Budi Santoso, M.T', nip: '19821105 200801 1 012', mapel: 'Fisika', rpp: 'Disetujui', jurnal: 'Belum', prota: 'Disetujui', penilaian: 'Menunggu Verifikasi', progress: 65, notes: 'Jurnal harian belum diisi bulan ini.' },
-            { id: 4, name: 'Dewi Lestari, S.Pd', nip: '19900120 201503 2 004', mapel: 'Bahasa Indonesia', rpp: 'Perlu Perbaikan', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Disetujui', progress: 80, notes: 'RPP butuh penyesuaian asesmen formatif.' },
-            { id: 5, name: 'Hendra Gunawan, S.Kom', nip: '19880719 201402 1 006', mapel: 'Informatika', rpp: 'Disetujui', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Disetujui', progress: 100, notes: 'Sempurna.' },
-            { id: 6, name: 'Eka Putri, M.Pd', nip: '19930412 201903 2 011', mapel: 'Bahasa Inggris', rpp: 'Menunggu Verifikasi', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Belum', progress: 60, notes: 'Proses verifikasi RPP.' }
+            { id: 1, name: 'Kamaruddin, S.Pd', nip: '19710504 199802 1 003', mapel: 'Matematika', rpp: 'Disetujui', jurnal: 'Lengkap', prota: 'Menunggu Verifikasi', penilaian: 'Perlu Perbaikan', progress: 75, notes: 'Mohon lengkapi perbaikan revisi soal STS.' },
+            { id: 2, name: 'Pahriatie, S.Pd', nip: '19750223 200604 1 003', mapel: 'Bimbingan Konseling', rpp: 'Disetujui', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Disetujui', progress: 100, notes: 'Administrasi sangat rapi dan lengkap.' },
+            { id: 3, name: 'Susilawati, S.Pd', nip: '19821030 200804 2 003', mapel: 'IPA', rpp: 'Disetujui', jurnal: 'Belum', prota: 'Disetujui', penilaian: 'Menunggu Verifikasi', progress: 65, notes: 'Jurnal harian belum diisi bulan ini.' },
+            { id: 4, name: 'Yulida Agustina, S.Pd', nip: '19830729 201001 2 011', mapel: 'Bahasa Indonesia', rpp: 'Perlu Perbaikan', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Disetujui', progress: 80, notes: 'RPP butuh penyesuaian asesmen formatif.' },
+            { id: 5, name: 'Rahmatullah, S.Pd.I', nip: '19840710 200904 1 009', mapel: 'Bahasa Inggris', rpp: 'Disetujui', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Disetujui', progress: 100, notes: 'Sempurna.' },
+            { id: 6, name: 'Eka Purnamasari, S.Pd', nip: '19860523 200904 2 003', mapel: 'IPS', rpp: 'Menunggu Verifikasi', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Belum', progress: 60, notes: 'Proses verifikasi RPP.' }
+            { id: 7, name: 'Misda Liani, S.Pd', nip: '19921017 201903 2 015', mapel: 'Bahasa Inggris', rpp: 'Menunggu Verifikasi', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Belum', progress: 60, notes: 'Proses verifikasi RPP.' }
+ 	{ id: 8, name: 'Muhammad Rasyid, S.Pd', nip: '19920202 202321 1 012', mapel: 'Penjas Orkes', rpp: 'Menunggu Verifikasi', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Belum', progress: 60, notes: 'Proses verifikasi RPP.' }
+    	 { id: 9, name: 'Pia Ramadayanti, S.Pd', nip: '19980103 202421 2 034', mapel: 'PKN', rpp: 'Menunggu Verifikasi', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Belum', progress: 60, notes: 'Proses verifikasi RPP.' }
+            { id: 10, name: 'Mau Izzatul Husna, S.Pd', nip: '20010415 202521 2 019', mapel: 'Informatika/Prakarya', rpp: 'Menunggu Verifikasi', jurnal: 'Lengkap', prota: 'Disetujui', penilaian: 'Belum', progress: 60, notes: 'Proses verifikasi RPP.' }
+
         ];
 
         window.onload = function() {
